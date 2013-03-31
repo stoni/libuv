@@ -20,7 +20,7 @@
           'VCCLCompilerTool': {
             'target_conditions': [
               ['library=="static_library"', {
-                'RuntimeLibrary': 1, # static debug
+                'RuntimeLibrary': 3, # static debug
               }, {
                 'RuntimeLibrary': 3, # DLL debug
               }],
@@ -56,7 +56,7 @@
           'VCCLCompilerTool': {
             'target_conditions': [
               ['library=="static_library"', {
-                'RuntimeLibrary': 0, # static release
+                'RuntimeLibrary': 2, # static release
               }, {
                 'RuntimeLibrary': 2, # debug release
               }],
