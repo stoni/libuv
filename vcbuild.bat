@@ -78,16 +78,6 @@ set config=Debug
 if defined noprojgen goto msbuild
 
 @rem Generate the VS project.
-if exist build\gyp goto have_gyp
-echo git clone https://git.chromium.org/external/gyp.git build/gyp
-git clone https://git.chromium.org/external/gyp.git build/gyp
-if errorlevel 1 goto gyp_install_failed
-goto have_gyp
-
-:gyp_install_failed
-echo Failed to download gyp. Make sure you have git installed, or
-echo manually install gyp into %~dp0build\gyp.
-exit /b 1
 
 :have_gyp
 if not defined PYTHON set PYTHON="python"
