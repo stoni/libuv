@@ -9,6 +9,8 @@ core
 vgcore.*
 .buildstamp
 
+*.pyc
+
 /libuv.so
 /libuv.dylib
 
