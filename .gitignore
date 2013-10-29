@@ -13,7 +13,6 @@ vgcore.*
 /libuv.dylib
 
 /out/
-/build/gyp
 
 /run-tests
 /run-tests.exe
