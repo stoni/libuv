@@ -336,11 +336,14 @@ static int uv__bind(uv_udp_t* handle,
    * Linux and hence it does not have SO_REUSEPORT at all.
    */
 #ifdef SO_REUSEPORT
+/* FIXME: stoni - commented in order to make this old version of libuv run on 
+   new linux kernels
   yes = 1;
   if (setsockopt(fd, SOL_SOCKET, SO_REUSEPORT, &yes, sizeof yes) == -1) {
     uv__set_sys_error(handle->loop, errno);
     goto out;
   }
+ */
 #endif
 
   if (flags & UV_UDP_IPV6ONLY) {
