@@ -24,6 +24,7 @@ vgcore.*
 /run-benchmarks.dSYM
 
 *.sln
+*.sln.cache
 *.vcproj
 *.vcxproj
 *.vcxproj.filters
